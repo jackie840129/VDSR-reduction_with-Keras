@@ -3,19 +3,8 @@ import numpy as np
 import os
 import scipy.misc as misc
 import skimage.io as sio
-from VDSR_model import model
-import modify_weights as utils
 from modcrop import modcrop
 import skimage.transform as sf
-# mat_path = "./model_15.mat"
-mat_path = "./Matlab_mat/VDSR_Official.mat"
-ratio,weights,bias = utils.get_modify_weights(mat_path)
-print('%d %% kernels were eliminated, but %.1f %% weights were eliminated' %(15,ratio*100))
-print('No. , weights\'s shape, bias\'s shape')
-for i in range(len(weights)):
-    weights[i] = weights[i].transpose(2,3,1,0)
-    bias[i] = bias[i].flatten()
-    print("layer %d: %r, %r" %(i,weights[i].shape,bias[i].shape))
 
 im_l = sio.imread('TEST_data/slena.bmp')
 im_gt = sio.imread('TEST_data/mlena.bmp')  #high resolution
