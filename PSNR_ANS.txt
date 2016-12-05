@@ -1,0 +1,27 @@
+##Matlab run matconvnet
+##model: VDSR_Official.mat
+sr_psnr: 36.635908 dB
+bi_psnr: 32.723209 dB
+
+##Matlab run matconvnet
+##model: new_model(same size,but place zeros)
+sr_psnr: 32.353143 dB
+bi_psnr: 32.723209 dB
+
+##Python run Conv
+##model: VDSR_Official.mat
+sr_psnr: 34.372610 dB
+bi_psnr: 32.723209 dB
+
+##Python run Conv
+##model: new_model(same size,but place zeros)
+sr_psnr: 32.723209 dB
+bi_psnr: 32.723209 dB
+
+##Python run Conv
+##model: new_model(not same size,modify the model)
+sr_psnr: 32.723209 dB
+bi_psnr: 32.723209 dB
+
+
+
