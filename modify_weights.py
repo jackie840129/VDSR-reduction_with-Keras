@@ -12,12 +12,19 @@ def get_vali_data():
     validata = sio.loadmat(matpath1)['data'].transpose(3,0,1,2)
     valilabel = sio.loadmat(matpath2)['label'].transpose(3,0,1,2)
     return validata,valilabel
+def get_original_weights(path):
+    mat_path = path #"./VDSR_15.mat"
+    model = sio.loadmat(mat_path)['model'][0][0]
+    weights = model[0][0]
+    bias = model[1][0]
+    weights[19] = weights[19].reshape(3,3,64,1)
+    return weights,bias
+
 def get_modify_weights(path): 
     mat_path = path #"./VDSR_15.mat"
     model = sio.loadmat(mat_path)['model'][0][0]
     weights = model[0][0]
     bias = model[1][0]
-    '''layer ,filter ,channel ,row ,colmn'''
     weights[19] = weights[19].reshape(3,3,64,1)
     all_para=0
     left_para = 0
@@ -25,6 +32,7 @@ def get_modify_weights(path):
     for i  in range(len(weights)):  #20-layers 
         # print(weights[i].shape)
         weights[i] = weights[i].transpose(3,2,0,1)
+        # weights[i] = weights[i].astype('float64')
         # print(weights[i].shape)
         # exit(-1)
         a,b,c,d = weights[i].shape
@@ -49,3 +57,4 @@ def get_modify_weights(path):
         left_para += (a*b*c*d)
 
     return (1-left_para/all_para),weights,bias
+
