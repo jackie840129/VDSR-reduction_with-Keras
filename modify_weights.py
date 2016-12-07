@@ -18,7 +18,7 @@ def get_original_weights(path):
     weights = model[0][0]
     bias = model[1][0]
     weights[19] = weights[19].reshape(3,3,64,1)
-    return weights,bias
+    return 0,weights,bias
 
 def get_modify_weights(path): 
     mat_path = path #"./VDSR_15.mat"
