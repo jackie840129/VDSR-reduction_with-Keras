@@ -51,10 +51,13 @@ Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
   I list the answer in my PSNR_ans.txt
 
 ## Result
-The Official PSNR: 36.635908 dB
-My fine-tune model PSNR :36.207958 dB
-No fine-tune PSNR: 32.353143 dB
-Just bicubic :32.723209 dB
+- The Official PSNR: 36.635908 dB
+
+- My fine-tune model PSNR :36.207958 dB
+
+- No fine-tune PSNR: 32.353143 dB
+
+- Just bicubic :32.723209 dB
 
 ## Discover
 You can see the matlab_vs_python to see the comparison of lots of functions
