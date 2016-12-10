@@ -8,16 +8,10 @@ bi_psnr: 32.723209 dB
 sr_psnr: 32.353143 dB
 bi_psnr: 32.723209 dB
 
-
-57 epoch sgd=0.0001
-PSNR = 32.722956
-
-5 epoch adam=0.001
-PSNR =36.083169
-
-4 epoch adam=0.001
-PSNR = 35.943574
-
+###My model run by python
+###model:fine_tune.h5
+sr_psnr: 36.207958 dB
+bi_psnr: 32.723209 dB
 
 
 
