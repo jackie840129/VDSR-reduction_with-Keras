@@ -3,15 +3,27 @@ import numpy as np
 def get_train_data():
     matpath1 = "./Matlab_mat/data.mat"
     matpath2 = "./Matlab_mat/label.mat"
+    matpath3 = "./Matlab_mat/data_aug.mat"
+    matpath4 = "./Matlab_mat/label_aug.mat"
     data = sio.loadmat(matpath1)['data'].transpose(3,0,1,2)
     label = sio.loadmat(matpath2)['label'].transpose(3,0,1,2)
+    data_a = sio.loadmat(matpath3)['data'].transpose(3,0,1,2)
+    label_a = sio.loadmat(matpath4)['label'].transpose(3,0,1,2)
+    data = np.concatenate((data,data_a),axis=0)
+    label = np.concatenate((label,label_a),axis=0)
     return data,label
 def get_vali_data():
     matpath1 = "./Matlab_mat/validata.mat"
     matpath2 = "./Matlab_mat/valilabel.mat"
-    validata = sio.loadmat(matpath1)['data'].transpose(3,0,1,2)
-    valilabel = sio.loadmat(matpath2)['label'].transpose(3,0,1,2)
-    return validata,valilabel
+    matpath3 = "./Matlab_mat/validata_100.mat"
+    matpath4 = "./Matlab_mat/valilabel_100.mat"
+    data = sio.loadmat(matpath1)['data'].transpose(3,0,1,2)
+    label = sio.loadmat(matpath2)['label'].transpose(3,0,1,2)
+    data_a = sio.loadmat(matpath3)['data'].transpose(3,0,1,2)
+    label_a = sio.loadmat(matpath4)['label'].transpose(3,0,1,2)
+    data = np.concatenate((data,data_a),axis=0)
+    label = np.concatenate((label,label_a),axis=0)
+    return data,label
 def get_original_weights(path):
     mat_path = path #"./VDSR_15.mat"
     model = sio.loadmat(mat_path)['model'][0][0]
@@ -30,11 +42,7 @@ def get_modify_weights(path):
     left_para = 0
     ############################################
     for i  in range(len(weights)):  #20-layers 
-        # print(weights[i].shape)
         weights[i] = weights[i].transpose(3,2,0,1)
-        # weights[i] = weights[i].astype('float64')
-        # print(weights[i].shape)
-        # exit(-1)
         a,b,c,d = weights[i].shape
         all_para+=( a*b*c*d)
     for i  in range(len(weights)-1):  #20-layers 

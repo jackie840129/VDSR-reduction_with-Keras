@@ -4,24 +4,25 @@ sr_psnr: 36.635908 dB
 bi_psnr: 32.723209 dB
 
 ##Matlab run matconvnet
-##model: new_model(same size,but place zeros)
+##model: new_model 
 sr_psnr: 32.353143 dB
 bi_psnr: 32.723209 dB
 
-##Python run Conv
-##model: VDSR_Official.mat
-sr_psnr: 34.372610 dB
-bi_psnr: 32.723209 dB
 
-##Python run Conv
-##model: new_model(same size,but place zeros)
-sr_psnr: 32.723209 dB
-bi_psnr: 32.723209 dB
+57 epoch sgd=0.0001
+PSNR = 32.722956
 
-##Python run Conv
-##model: new_model(not same size,modify the model)
-sr_psnr: 32.723209 dB
-bi_psnr: 32.723209 dB
+5 epoch adam=0.001
+PSNR =36.083169
+
+4 epoch adam=0.001
+PSNR = 35.943574
+
+
+
+
+
+
 
 
 
