@@ -60,6 +60,24 @@ Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
 
 - Just bicubic :32.723209 dB
 
+###Eliminate 18% kenels (actually eliminate 34.9% parameters)
+- The Official PSNR: 36.635908 dB
+
+- My fine-tune model PSNR :36.093349 dB
+
+- No fine-tune PSNR: 32.345002 dB
+
+- Just bicubic :32.723209 dB
+
+###Eliminate 20% kenels (actually eliminate 38.1% parameters)
+- The Official PSNR: 36.635908 dB
+
+- My fine-tune model PSNR :36.050442 dB
+
+- No fine-tune PSNR: 32.317988 dB
+
+- Just bicubic :32.723209 dB
+
 ## Discover
 You can see the matlab_vs_python to see the comparison of lots of functions
 
