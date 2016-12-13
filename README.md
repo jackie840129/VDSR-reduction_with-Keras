@@ -34,12 +34,12 @@ So you just need to place these data under the "Matlab_mat" directory.
 4. validation label & aug validation labels : [here](https://drive.google.com/open?id=0Bw_IymwywdSnOFU0VjBuMmlhQlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnUDhGNEFWNzB6bDA)
 
 ### Train(fine-tune)
-1. ˋ$ python3 VDSR_fine_tune.py ˋ
+1. `$ python3 VDSR_fine_tune.py`
 
 ### TEST
 Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
 
-1. ˋ$ python3 TEST.pyˋ
+1. `$ python3 TEST.py`
 
 2. There will be an output "python_im_h_y.mat" , put it in your matlab directory
 
