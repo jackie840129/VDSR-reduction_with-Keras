@@ -34,13 +34,13 @@ So you just need to place these data under the "Matlab_mat" directory.
 4. validation label & aug validation labels : [here](https://drive.google.com/open?id=0Bw_IymwywdSnOFU0VjBuMmlhQlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnUDhGNEFWNzB6bDA)
 
 ### Train(fine-tune)
-1. $ python3 VDSR_fine_tune.py 
+1. ˋ$ python3 VDSR_fine_tune.py ˋ
 
 ### TEST
 Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
-'''
-1. $ python3 TEST.py
-'''
+
+1. ˋ$ python3 TEST.pyˋ
+
 2. There will be an output "python_im_h_y.mat" , put it in your matlab directory
 
 3. open Matlab 
@@ -54,18 +54,18 @@ Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
 ###Eliminate 15% kenels (actually eliminate 29.8% parameters)
 - The Official PSNR: 36.635908 dB
 
-- My fine-tune model PSNR :36.207958 dB
+- My fine-tune model PSNR : **36.207958** dB
 
-- No fine-tune PSNR: 32.353143 dB
+- **No** fine-tune PSNR: **32.353143** dB
 
 - Just bicubic :32.723209 dB
 
 ###Eliminate 18% kenels (actually eliminate 34.9% parameters)
 - The Official PSNR: 36.635908 dB
 
-- My fine-tune model PSNR :36.093349 dB
+- My fine-tune model PSNR :**36.093349** dB
 
-- No fine-tune PSNR: 32.345002 dB
+- **No** fine-tune PSNR: **32.345002** dB
 
 - Just bicubic :32.723209 dB
 
