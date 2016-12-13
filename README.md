@@ -72,7 +72,7 @@ Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
 ###Eliminate 20% kenels (actually eliminate 38.1% parameters)
 - The Official PSNR: 36.635908 dB
 
-- My fine-tune model PSNR :36.050442 dB
+- My fine-tune model PSNR :36.065349 dB
 
 - No fine-tune PSNR: 32.317988 dB
 
