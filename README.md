@@ -1,6 +1,6 @@
 # VDSR_fine-tune
 This is an implementation of "Deep Convolutional Neural Network on iOS Mobile Devices",Chun-Fu (Richard) Chen
-,on the topic of VDSR.
+,on the topic of VDSR(Very Deep Super Resolution).
 
 The original model and part of my code is copied from ["caffe-vdsr"](https://github.com/huangzehao/caffe-vdsr) , which is an implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) (CVPR 2016 Oral Paper) 
 
@@ -25,7 +25,7 @@ The data I used was preprocessd by Matlab,because I found that the "rgb2ycbcr" a
 
 So you just need to place these data under the "Matlab_mat" directory.
 
-1. training data & aug training data : [here](https://drive.google.com/file/d/0Bw_IymwywdSnWUo0ZTlkdmtKcVk/view?usp=sharing)and [here](https://drive.google.com/open?id=0Bw_IymwywdSndVFBdDVJWm1kRHc)
+1. training data & aug training data : [here](https://drive.google.com/file/d/0Bw_IymwywdSnWUo0ZTlkdmtKcVk/view?usp=sharing) and [here](https://drive.google.com/open?id=0Bw_IymwywdSndVFBdDVJWm1kRHc)
 
 2. training labels & aug training labels : [here](https://drive.google.com/open?id=0Bw_IymwywdSnT21QdEZGZGpwMlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnZ2xTaXowbHJULXc)
 
