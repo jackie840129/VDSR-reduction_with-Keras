@@ -25,13 +25,13 @@ The data I used was preprocessd by Matlab,because I found that the "rgb2ycbcr" a
 
 So you just need to place these data under the "Matlab_mat" directory.
 
-1. training data& aug training data [here](https://drive.google.com/file/d/0Bw_IymwywdSnWUo0ZTlkdmtKcVk/view?usp=sharing)and [here](https://drive.google.com/open?id=0Bw_IymwywdSndVFBdDVJWm1kRHc)
+1. training data & aug training data : [here](https://drive.google.com/file/d/0Bw_IymwywdSnWUo0ZTlkdmtKcVk/view?usp=sharing)and [here](https://drive.google.com/open?id=0Bw_IymwywdSndVFBdDVJWm1kRHc)
 
-2. training labels % aug training labels [here](https://drive.google.com/open?id=0Bw_IymwywdSnT21QdEZGZGpwMlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnZ2xTaXowbHJULXc)
+2. training labels & aug training labels : [here](https://drive.google.com/open?id=0Bw_IymwywdSnT21QdEZGZGpwMlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnZ2xTaXowbHJULXc)
 
-3. validation data & aug validationdata [here](https://drive.google.com/open?id=0Bw_IymwywdSnbmdvbmtGU0ZBejQ) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnQU9EZEw0LWdtQTA)
+3. validation data & aug validationdata : [here](https://drive.google.com/open?id=0Bw_IymwywdSnbmdvbmtGU0ZBejQ) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnQU9EZEw0LWdtQTA)
 
-4. validation label & aug validation labels [here](https://drive.google.com/open?id=0Bw_IymwywdSnOFU0VjBuMmlhQlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnUDhGNEFWNzB6bDA)
+4. validation label & aug validation labels : [here](https://drive.google.com/open?id=0Bw_IymwywdSnOFU0VjBuMmlhQlE) and [here](https://drive.google.com/open?id=0Bw_IymwywdSnUDhGNEFWNzB6bDA)
 
 ### Train(fine-tune)
 1. $ python3 VDSR_fine_tune.py 
@@ -51,6 +51,7 @@ Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
   I list the answer in my PSNR_ans.txt
 
 ## Result
+###Eliminate 15% kenels (actually eliminate 29.8% parameters)
 - The Official PSNR: 36.635908 dB
 
 - My fine-tune model PSNR :36.207958 dB
