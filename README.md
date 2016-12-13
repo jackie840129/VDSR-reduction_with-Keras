@@ -38,9 +38,9 @@ So you just need to place these data under the "Matlab_mat" directory.
 
 ### TEST
 Have preprocessed low-resolution lena.png to im_y.mat (in kill_kernel directory)
-
+'''
 1. $ python3 TEST.py
-
+'''
 2. There will be an output "python_im_h_y.mat" , put it in your matlab directory
 
 3. open Matlab 
