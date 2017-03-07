@@ -2,7 +2,12 @@
 This is an implementation of "Deep Convolutional Neural Network on iOS Mobile Devices",Chun-Fu (Richard) Chen
 ,on the topic of VDSR(Very Deep Super Resolution).
 
-The original model and part of my code is copied from ["caffe-vdsr"](https://github.com/huangzehao/caffe-vdsr) , which is an implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) (CVPR 2016 Oral Paper) 
+The original model and part of my code is copied from ["caffe-vdsr"](https://github.com/huangzehao/caffe-vdsr) , which is an implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) 
+
+<img src="http://i.imgur.com/feiLtw6.png" width="1024" height="512">
+
+The reference:
+[1] Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
 
 ##Instruction
 In order to implement a convolutional computation on mobile device, we need to prune the weights of the model to make the inference process faster,and at the same time,not losing the performance.
