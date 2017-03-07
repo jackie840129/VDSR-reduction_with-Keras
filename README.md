@@ -4,7 +4,7 @@ This is an implementation of "Deep Convolutional Neural Network on iOS Mobile De
 
 The original model and part of my code is copied from ["caffe-vdsr"](https://github.com/huangzehao/caffe-vdsr) , which is an implementation of ["Accurate Image Super-Resolution Using Very Deep Convolutional Networks"](http://cv.snu.ac.kr/research/VDSR/) 
 
-<img src="http://i.imgur.com/feiLtw6.png" width="1024" height="512">
+<img src="http://i.imgur.com/feiLtw6.png" width="760" height="360">
 
 The reference:
 [1] Jiwon Kim, Jung Kwon Lee and Kyoung Mu Lee, "Accurate Image Super-Resolution Using Very Deep Convolutional Networks", Proc. of IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016
