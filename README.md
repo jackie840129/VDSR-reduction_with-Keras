@@ -1,4 +1,4 @@
-# VDSR_fine-tune
+# VDSR-reduction_with-Keras
 This is an implementation of "Deep Convolutional Neural Network on iOS Mobile Devices",Chun-Fu (Richard) Chen
 ,on the topic of VDSR(Very Deep Super Resolution).
 
